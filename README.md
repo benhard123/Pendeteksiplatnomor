@@ -15,33 +15,20 @@ Here for the detail :
 or you can read the state of the art of object detection <br>
 [State-of-the-art of Object Detection ](https://paperswithcode.com/task/object-detection)
 
-## Prerequest
-- python==3.6
-- opencv-python==4.1.1.26
-- numpy==1.17.3<br>
-or install using<br>
-`pip install -r requirements.txt`
 
 ## How to run (Linux):
-- Calibrate the camera and threshold<br>
-  `python Main.py -c <image_dir>` 
-- Cam<br>
   `python Main.py`
-- Image<br>
-  `python Main.py -i <image_file_dir>`
-- Video<br>
-  `python Main.py -v <video_file_dir>`
-
+  
 ## Retrain
 Retrain process will update classifications.txt and flattened_images.txt files<br>
-`python GenData.py -d = <train_image>`<br>
+`python GenData.py -d <train_image>`<br>
 example : <br>
-`python GenData.py -d = train_image/train2.png`<br>
+`python GenData.py -d train_image/train2.png`<br>
 note: *Just input base on marked object one by one and press esc to exit the training process*
 
 ### Check the model
-`python TrainAndTestData.py -d = train_image/train2.png`
+`python TrainAndTestData.py -d train_image/train2.png`
 
 ## Tools
 - Invert image:<br>
-`python invert_imageData.py -d = train_image/train2.png`
+`python invert_imageData.py -d train_image/train2.png`
